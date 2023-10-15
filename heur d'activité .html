@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+
+    <div class="tete" >
+       <div class="acceuil">
+       <a href="livraison.html">acceuil</a> </div>
+      <a href="contact.html"> nous contacté</a> 
+      <a href="#">nos tarif</a> 
+      <a href="heur d'activité .html"> <h3>heur d'activité</h3></a> 
+
+
+    </div>
+
+
+    <style>
+        
+
+
+        body {
+background-size: cover;
+background-opacity: 0.5;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+        .tete {
+            background-color: antiquewhite;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+}
+        .acceuil{
+            
+        }
+        p {
+  font-size: 16px;
+  color: #333;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+
+    </style>
+      
+      <p id="activity-hours">Nos heures d'activité sont du lundi au vendredi, de 9h00 à 17h00.</p>
+        <script>
+            function changeTextColorRandomly() {
+                const textElement = document.getElementById("activity-hours");
+                const colors = ["red", "blue", "green", "purple", "teal"];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                textElement.style.color = randomColor;
+            }
+    
+            // Appel de la fonction pour changer la couleur toutes les 5 secondes
+            setInterval(changeTextColorRandomly, 5000);
+        </script>
+</body>
+</html>
+
